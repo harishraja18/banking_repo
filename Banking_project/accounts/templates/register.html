@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container mt-4">
+  <h1 class="mb-4">Register</h1>
+
+  <form method="POST">
+    {% csrf_token %}
+
+    <!-- First Name -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">First</span>
+      <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+    </div>
+
+    <!-- Last Name -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">Last</span>
+      <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+    </div>
+
+    <!-- Email -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">@</span>
+      <input type="email" class="form-control" name="email" placeholder="Email" required>
+    </div>
+
+    <!-- Username -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">@</span>
+      <input type="text" class="form-control" name="username" placeholder="Username" required>
+    </div>
+
+    <!-- Password -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">🔒</span>
+      <input type="password" class="form-control" name="password" placeholder="Password" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+  </form>
+</div>
+{% endblock %}
