@@ -1,5 +1,8 @@
 # Version 4 => Banking Project
 
+⚠️ Note: This version contains some work-in-progress / messy changes made today — these will be cleaned up by the end of this week.
+✅ New features and improvements will continue to be added frequently (almost every day or at least once every 2 days), so please expect regular updates.
+
 A simple web-based banking application built with Django.  
 This version (v4) uses **PostgreSQL** as the backend database instead of SQLite and includes user authentication features such as registration, login, profile management, and password change.
 
@@ -66,6 +69,8 @@ python manage.py migrate
 
 # run the server
 python manage.py runserver
+
+
 
 -----------------------------------------------------------------------------------------------------------
 
